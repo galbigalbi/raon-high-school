@@ -325,3 +325,174 @@
     }
 
 }
+/* ==========================================================
+TABLET
+========================================================== */
+
+@media (max-width: 992px){
+
+    .campus-layout,
+    .exchange-layout,
+    .character-layout{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .campus-feature-grid,
+    .facility-grid,
+    .culture-grid,
+    .special-grid,
+    .calendar-grid,
+    .dorm-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+/* ==========================================================
+MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+    section{
+        padding:90px 0;
+    }
+
+    .container{
+        width:92%;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:44px;
+    }
+
+    .hero h2{
+        font-size:24px;
+    }
+
+    .section-head h2{
+        font-size:34px;
+    }
+
+    /* 전부 한줄 */
+
+    .campus-feature-grid,
+    .facility-grid,
+    .culture-grid,
+    .special-grid,
+    .club-grid,
+    .calendar-grid,
+    .dorm-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* 지도 */
+
+    .campus-map img{
+
+        width:100%;
+        height:auto;
+        display:block;
+
+    }
+
+    /* 교환학생 */
+
+    .exchange-layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .exchange-card{
+
+        width:100%;
+
+    }
+
+    /* 카드 */
+
+    .campus-card,
+    .culture-card,
+    .facility-card,
+    .special-card,
+    .club-card,
+    .calendar-item,
+    .dorm-card{
+
+        padding:24px;
+
+    }
+
+    h3{
+
+        word-break:keep-all;
+
+    }
+
+}
+/* ==========================================================
+PHONE FIX
+========================================================== */
+
+@media (max-width:768px){
+
+    .campus-feature-grid,
+    .culture-grid,
+    .club-grid,
+    .facility-grid,
+    .dorm-grid,
+    .calendar-grid,
+    .special-grid{
+
+        grid-template-columns:1fr !important;
+
+    }
+
+    .campus-card,
+    .culture-card,
+    .club-card,
+    .facility-card,
+    .special-card,
+    .calendar-item,
+    .dorm-card{
+
+        width:100%;
+        min-height:auto;
+        padding:24px;
+
+    }
+
+    .campus-card h3,
+    .culture-card h3,
+    .club-card h3,
+    .facility-card h3,
+    .special-card h3,
+    .dorm-card h3{
+
+        font-size:22px;
+        word-break:keep-all;
+        white-space:normal;
+
+    }
+
+    .campus-card p,
+    .culture-card p,
+    .club-card p,
+    .facility-card p,
+    .special-card p,
+    .dorm-card p{
+
+        font-size:15px;
+        line-height:1.8;
+        word-break:keep-all;
+
+    }
+
+}
