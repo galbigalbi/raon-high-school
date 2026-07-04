@@ -1,0 +1,551 @@
+/* ==========================================================
+   CLUB
+========================================================== */
+
+.club{
+
+    position:relative;
+
+    background:
+
+    linear-gradient(
+
+        180deg,
+
+        #071320,
+
+        #0D2136,
+
+        #10263C
+
+    );
+
+    overflow:hidden;
+
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.club-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.club-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:38px;
+
+    border-radius:24px;
+
+    background:
+
+    linear-gradient(
+
+        180deg,
+
+        rgba(255,255,255,.05),
+
+        rgba(255,255,255,.02)
+
+    );
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.club-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--gold);
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.25);
+
+}
+
+/* ==========================
+   CLUB NAME
+========================== */
+
+.club-card h3{
+
+    font-size:28px;
+
+    margin-bottom:12px;
+
+}
+
+/* ==========================
+   MEMBER
+========================== */
+
+.club-card strong{
+
+    display:block;
+
+    color:var(--gold);
+
+    font-size:16px;
+
+    letter-spacing:2px;
+
+    margin-bottom:24px;
+
+}
+
+/* ==========================
+   TEXT
+========================== */
+
+.club-card p{
+
+    color:var(--text);
+
+    line-height:2;
+
+    font-size:15px;
+
+}
+
+/* ==========================
+   GOLD BAR
+========================== */
+
+.club-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:3px;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        var(--gold),
+
+        transparent
+
+    );
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.club-card:hover::before{
+
+    opacity:1;
+
+}
+
+/* ==========================
+   GLOW
+========================== */
+
+.club-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-70px;
+
+    bottom:-70px;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+
+        rgba(216,187,115,.08),
+
+        transparent 70%
+
+    );
+
+}
+/* ==========================================================
+   CLUB TITLE DECORATION
+========================================================== */
+
+.club-card h3{
+
+    position:relative;
+
+    padding-bottom:18px;
+
+}
+
+.club-card h3::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:55px;
+
+    height:2px;
+
+    background:var(--gold);
+
+}
+
+/* ==========================
+   MEMBER
+========================== */
+
+.club-card strong{
+
+    display:block;
+
+    margin-top:22px;
+
+    margin-bottom:22px;
+
+    color:var(--gold);
+
+    font-size:15px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+/* ==========================
+   TEXT
+========================== */
+
+.club-card p{
+
+    color:var(--text);
+
+    line-height:2;
+
+    min-height:96px;
+
+}
+
+/* ==========================
+   CARD HOVER
+========================== */
+
+.club-card:hover h3{
+
+    color:var(--gold);
+
+}
+
+.club-card:hover strong{
+
+    color:#F5D98D;
+
+}
+
+.club-card:hover p{
+
+    color:#F2F5F8;
+
+}
+
+/* ==========================================================
+   BACKGROUND DECORATION
+========================================================== */
+
+.club::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-220px;
+
+    top:120px;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+
+            rgba(216,187,115,.05),
+
+            transparent 70%
+
+        );
+
+    pointer-events:none;
+
+}
+
+.club::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-220px;
+
+    bottom:120px;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+
+            rgba(216,187,115,.05),
+
+            transparent 70%
+
+        );
+
+    pointer-events:none;
+
+}
+/* ==========================================================
+   CLUB RESPONSIVE
+========================================================== */
+
+@media (max-width:1200px){
+
+    .club-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:28px;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .club{
+
+        padding:120px 0;
+
+    }
+
+    .club-card{
+
+        padding:34px;
+
+    }
+
+    .club-card h3{
+
+        font-size:24px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .club{
+
+        padding:90px 0;
+
+    }
+
+    .club-grid{
+
+        grid-template-columns:1fr;
+
+        gap:22px;
+
+    }
+
+    .club-card{
+
+        padding:28px;
+
+        border-radius:20px;
+
+    }
+
+    .club-card h3{
+
+        font-size:22px;
+
+    }
+
+    .club-card strong{
+
+        font-size:14px;
+
+    }
+
+    .club-card p{
+
+        min-height:auto;
+
+        font-size:15px;
+
+        line-height:1.9;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .club-card{
+
+        padding:22px;
+
+    }
+
+    .club-card h3{
+
+        font-size:20px;
+
+    }
+
+    .club-card strong{
+
+        font-size:13px;
+
+        letter-spacing:1px;
+
+    }
+
+    .club-card p{
+
+        font-size:14px;
+
+    }
+
+}
+
+/* ==========================================================
+   SCROLL EFFECT
+========================================================== */
+
+.club-card{
+
+    opacity:0;
+
+    transform:translateY(25px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.club-card.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================================
+   STAGGER EFFECT
+========================================================== */
+
+.club-card:nth-child(1){
+
+    transition-delay:.05s;
+
+}
+
+.club-card:nth-child(2){
+
+    transition-delay:.12s;
+
+}
+
+.club-card:nth-child(3){
+
+    transition-delay:.19s;
+
+}
+
+.club-card:nth-child(4){
+
+    transition-delay:.26s;
+
+}
+
+.club-card:nth-child(5){
+
+    transition-delay:.33s;
+
+}
+
+.club-card:nth-child(6){
+
+    transition-delay:.40s;
+
+}
+
+.club-card:nth-child(7){
+
+    transition-delay:.47s;
+
+}
+
+.club-card:nth-child(8){
+
+    transition-delay:.54s;
+
+}

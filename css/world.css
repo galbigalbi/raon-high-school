@@ -1,0 +1,290 @@
+/* ==========================================================
+WORLD
+========================================================== */
+
+.world{
+
+    background:#08111b;
+
+}
+
+.world-story{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+}
+
+.story-line{
+
+    font-size:34px;
+
+    font-weight:300;
+
+    line-height:2;
+
+    color:#eef2f6;
+
+    margin:0;
+
+}
+
+.story-line.highlight{
+
+    color:var(--gold);
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.story-divider{
+
+    width:90px;
+
+    height:2px;
+
+    background:var(--gold);
+
+    margin:50px auto;
+
+}
+
+
+
+/* ==========================================================
+EXCHANGE
+========================================================== */
+
+.exchange{
+
+    background:#0b1521;
+
+}
+
+.exchange .section-head{
+
+    margin-bottom:70px;
+
+}
+
+.exchange-sub{
+
+    display:block;
+
+    text-align:center;
+
+    color:var(--gold);
+
+    letter-spacing:5px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+.exchange h2{
+
+    text-align:center;
+
+    font-size:58px;
+
+    line-height:1.25;
+
+    margin-bottom:60px;
+
+}
+
+.exchange-layout{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:60px;
+
+    align-items:start;
+
+}
+
+.exchange-text p{
+
+    font-size:22px;
+
+    color:#d6dde5;
+
+    margin-bottom:28px;
+
+    line-height:2;
+
+}
+
+.exchange-note{
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:36px;
+
+}
+
+.exchange-note h3{
+
+    color:var(--gold);
+
+    margin-bottom:28px;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+}
+
+.exchange-note ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.exchange-note li{
+
+    padding:14px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    color:#cfd8e2;
+
+}
+
+.exchange-note li:last-child{
+
+    border:none;
+
+}
+/* ==========================================================
+EXCHANGE CARD
+========================================================== */
+
+.exchange-layout{
+
+display:grid;
+
+grid-template-columns:1fr 420px;
+
+gap:80px;
+
+align-items:center;
+
+}
+
+.exchange-text{
+
+font-size:20px;
+
+line-height:2;
+
+color:#d9e2ea;
+
+}
+
+.exchange-text p{
+
+margin-bottom:26px;
+
+}
+
+.exchange-card{
+
+background:rgba(255,255,255,.04);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:24px;
+
+padding:36px;
+
+backdrop-filter:blur(12px);
+
+box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+}
+
+.exchange-card-header{
+
+font-size:15px;
+
+letter-spacing:3px;
+
+color:var(--gold);
+
+font-weight:700;
+
+margin-bottom:30px;
+
+}
+
+.exchange-item{
+
+display:flex;
+
+justify-content:space-between;
+
+padding:14px 0;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.exchange-item span{
+
+color:#9fb0c2;
+
+}
+
+.exchange-item strong{
+
+font-size:16px;
+
+}
+
+.exchange-item .gold{
+
+color:var(--gold);
+
+}
+
+.exchange-card h4{
+
+margin-top:28px;
+
+margin-bottom:18px;
+
+font-size:18px;
+
+color:#fff;
+
+}
+
+.exchange-card ul{
+
+padding-left:18px;
+
+color:#cfd7df;
+
+line-height:2;
+
+}

@@ -1,0 +1,255 @@
+/* ==========================================================
+REPRESENTATIVE STUDENTS
+========================================================== */
+
+.characters{
+
+    background:#050c14;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+/* ---------------------------
+Layout
+---------------------------- */
+
+.character-layout{
+
+    display:grid;
+
+    grid-template-columns:520px 1fr;
+
+    gap:90px;
+
+    align-items:center;
+
+    margin-bottom:70px;
+
+}
+
+
+
+/* ---------------------------
+Image
+---------------------------- */
+
+.character-visual{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.character-visual img{
+
+    width:100%;
+
+    max-width:480px;
+
+    user-select:none;
+
+    filter:drop-shadow(0 30px 60px rgba(0,0,0,.45));
+
+}
+
+
+
+/* ---------------------------
+Text
+---------------------------- */
+
+.character-grade{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(216,179,106,.12);
+
+    color:var(--gold);
+
+    letter-spacing:2px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.character-content h3{
+
+    font-size:64px;
+
+    margin-bottom:12px;
+
+    font-weight:800;
+
+}
+
+
+
+.character-species{
+
+    color:#92a7ba;
+
+    font-size:18px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-bottom:42px;
+
+}
+
+
+
+/* ---------------------------
+Quote
+---------------------------- */
+
+.character-quote{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:42px;
+
+}
+
+.quote-mark{
+
+    font-size:42px;
+
+    color:var(--gold);
+
+    line-height:1;
+
+}
+
+.character-quote p{
+
+    font-size:30px;
+
+    font-weight:600;
+
+    margin:0;
+
+}
+
+
+
+/* ---------------------------
+Description
+---------------------------- */
+
+.character-description{
+
+    color:#d5dde5;
+
+    font-size:18px;
+
+    line-height:2;
+
+    max-width:650px;
+
+}
+
+
+
+/* ---------------------------
+Buttons
+---------------------------- */
+
+.character-selector{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+}
+
+.character-btn{
+
+    padding:15px 34px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.03);
+
+    color:#d8dee6;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    font-size:15px;
+
+}
+
+.character-btn:hover{
+
+    border-color:var(--gold);
+
+    color:var(--gold);
+
+    transform:translateY(-4px);
+
+}
+
+.character-btn.active{
+
+    background:var(--gold);
+
+    color:#111;
+
+    border-color:var(--gold);
+
+}
+
+
+
+/* ---------------------------
+Fade Animation
+---------------------------- */
+
+.character-visual img,
+
+.character-content{
+
+    transition:.35s;
+
+}
+
+.character-visual img.fade,
+
+.character-content.fade{
+
+    opacity:0;
+
+    transform:translateY(12px);
+
+}

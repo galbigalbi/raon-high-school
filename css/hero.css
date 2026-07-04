@@ -1,0 +1,223 @@
+/* ==========================================================
+HERO
+========================================================== */
+
+.hero{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            rgba(6,10,18,.45),
+            rgba(6,10,18,.82)
+        ),
+        url("../assets/bg/hero-bg.png")
+        center center / cover
+        no-repeat;
+
+}
+
+
+
+/* 어둡게 */
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+
+        rgba(0,0,0,.15),
+
+        rgba(0,0,0,.55)
+
+    );
+
+}
+
+
+
+/* 내용 */
+
+.hero-inner{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+}
+
+
+
+/* 로고 */
+
+.hero-logo{
+
+    margin-bottom:26px;
+
+}
+
+.hero-logo img{
+
+    width:120px;
+
+    margin:auto;
+
+}
+
+
+
+/* 영어 */
+
+.hero-sub{
+
+    display:block;
+
+    color:var(--gold);
+
+    letter-spacing:5px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    margin-bottom:26px;
+
+}
+
+
+
+/* 제목 */
+
+.hero h1{
+
+    font-size:78px;
+
+    line-height:1.08;
+
+    margin-bottom:20px;
+
+    font-weight:800;
+
+}
+
+
+
+/* 부제 */
+
+.hero h2{
+
+    font-size:34px;
+
+    color:#ffffff;
+
+    margin-bottom:28px;
+
+    font-weight:600;
+
+}
+
+
+
+/* 설명 */
+
+.hero p{
+
+    color:#d9e2ea;
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    margin:auto;
+
+    max-width:720px;
+
+}
+
+
+
+/* 강조 */
+
+.hero strong{
+
+    color:var(--gold);
+
+}
+
+
+
+/* 버튼 */
+
+.hero-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-top:52px;
+
+    width:220px;
+
+    height:62px;
+
+    border-radius:999px;
+
+    background:var(--gold);
+
+    color:#111;
+
+    font-weight:700;
+
+    font-size:17px;
+
+    transition:.35s;
+
+}
+
+
+
+.hero-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 16px 35px rgba(216,179,106,.35);
+
+}
+
+
+
+/* 스크롤 */
+
+.hero-scroll{
+
+    margin-top:90px;
+
+    letter-spacing:6px;
+
+    font-size:12px;
+
+    color:#d2d2d2;
+
+    opacity:.75;
+
+}

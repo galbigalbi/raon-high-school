@@ -1,0 +1,327 @@
+/* ==========================================================
+1200px
+========================================================== */
+
+@media(max-width:1200px){
+
+    .hero h1{
+
+        font-size:64px;
+
+    }
+
+    .hero h2{
+
+        font-size:30px;
+
+    }
+
+    .campus-layout,
+
+    .exchange-layout,
+
+    .character-layout{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+992px
+========================================================== */
+
+@media(max-width:992px){
+
+    section{
+
+        padding:100px 0;
+
+    }
+
+    .section-head h2{
+
+        font-size:42px;
+
+    }
+
+    .section-head p{
+
+        font-size:17px;
+
+    }
+
+    .culture-grid,
+
+    .special-grid,
+
+    .calendar-grid,
+
+    .dorm-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .club-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .character-layout{
+
+        text-align:center;
+
+    }
+
+    .character-description{
+
+        margin:auto;
+
+    }
+
+    .character-quote{
+
+        justify-content:center;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+768px
+========================================================== */
+
+@media(max-width:768px){
+
+    .header .container{
+
+        height:72px;
+
+    }
+
+    nav{
+
+        display:none;
+
+    }
+
+    .hero{
+
+        min-height:90vh;
+
+    }
+
+    .hero-logo img{
+
+        width:90px;
+
+    }
+
+    .hero h1{
+
+        font-size:46px;
+
+    }
+
+    .hero h2{
+
+        font-size:24px;
+
+    }
+
+    .hero p{
+
+        font-size:17px;
+
+    }
+
+    .hero-btn{
+
+        width:190px;
+
+        height:56px;
+
+    }
+
+    .section-head{
+
+        margin-bottom:60px;
+
+    }
+
+    .section-head h2{
+
+        font-size:34px;
+
+    }
+
+    .story-line{
+
+        font-size:24px;
+
+    }
+
+    .exchange h2{
+
+        font-size:40px;
+
+    }
+
+    .campus-card,
+
+    .club-card,
+
+    .culture-card,
+
+    .special-card,
+
+    .calendar-item,
+
+    .dorm-card{
+
+        padding:28px;
+
+    }
+
+    .calendar-item{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .calendar-month{
+
+        min-width:auto;
+
+    }
+
+    .character-content h3{
+
+        font-size:48px;
+
+    }
+
+    .character-quote p{
+
+        font-size:24px;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+480px
+========================================================== */
+
+@media(max-width:480px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+    .hero h1{
+
+        font-size:38px;
+
+    }
+
+    .hero h2{
+
+        font-size:20px;
+
+    }
+
+    .hero p{
+
+        font-size:15px;
+
+    }
+
+    .section-head span{
+
+        font-size:11px;
+
+    }
+
+    .section-head h2{
+
+        font-size:30px;
+
+    }
+
+    .section-head p{
+
+        font-size:15px;
+
+    }
+
+    .story-line{
+
+        font-size:20px;
+
+    }
+
+    .exchange h2{
+
+        font-size:32px;
+
+    }
+
+    .club-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .character-content h3{
+
+        font-size:40px;
+
+    }
+
+    .character-species{
+
+        font-size:15px;
+
+    }
+
+    .character-quote{
+
+        gap:10px;
+
+    }
+
+    .quote-mark{
+
+        font-size:30px;
+
+    }
+
+    .character-quote p{
+
+        font-size:20px;
+
+    }
+
+    .character-btn{
+
+        width:100%;
+
+    }
+
+}

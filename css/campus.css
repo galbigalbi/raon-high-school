@@ -1,0 +1,269 @@
+/* ==========================================================
+RAON HIGH SCHOOL
+========================================================== */
+
+.campus{
+
+    background:#0d1723;
+
+}
+
+.campus-map{
+
+    position:relative;
+
+}
+
+.campus-map img{
+
+    width:100%;
+
+    border-radius:28px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 30px 80px rgba(0,0,0,.35);
+
+}
+
+/* ==========================================================
+MAP
+========================================================== */
+
+.campus-map{
+
+    margin:70px 0;
+
+}
+
+.campus-map img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:28px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 30px 70px rgba(0,0,0,.35);
+
+}
+
+/* ==========================================================
+FEATURE GRID
+========================================================== */
+
+.campus-feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+.campus-card{
+
+    min-height:180px;
+
+}
+
+.campus-card{
+
+    padding:28px 30px;
+
+}
+
+.campus-card h3{
+
+    font-size:22px;
+
+    margin-bottom:12px;
+
+    color:var(--gold);
+
+}
+
+.campus-card p{
+
+    color:#d5dde5;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+/* ==========================================================
+DORMITORY
+========================================================== */
+
+.dormitory{
+
+    background:#08111b;
+
+}
+
+.dorm-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+    margin-bottom:60px;
+
+}
+
+.dorm-card{
+
+    text-align:center;
+
+}
+
+.dorm-card h3{
+
+    font-size:28px;
+
+    color:var(--gold);
+
+    margin-bottom:10px;
+
+}
+
+.dorm-card span{
+
+    display:inline-block;
+
+    margin-bottom:20px;
+
+    color:#9fb0c3;
+
+    font-size:15px;
+
+    letter-spacing:1px;
+
+}
+
+.dorm-card p{
+
+    color:#d6dde4;
+
+    line-height:1.8;
+
+}
+
+.dorm-rule{
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:42px;
+
+}
+
+.dorm-rule h3{
+
+    color:var(--gold);
+
+    margin-bottom:24px;
+
+    font-size:26px;
+
+}
+
+.dorm-rule ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.dorm-rule li{
+
+    padding:16px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    color:#d5dde5;
+
+}
+
+.dorm-rule li:last-child{
+
+    border-bottom:none;
+
+}
+
+/* ==========================================================
+FACILITY
+========================================================== */
+
+.small-head{
+
+margin-top:90px;
+
+margin-bottom:50px;
+
+}
+
+.facility-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:28px;
+
+margin-bottom:90px;
+
+}
+
+.facility-card{
+
+background:rgba(255,255,255,.03);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:22px;
+
+padding:32px;
+
+transition:.35s;
+
+}
+
+.facility-card:hover{
+
+transform:translateY(-8px);
+
+border-color:var(--gold);
+
+}
+
+.facility-card h3{
+
+margin-bottom:18px;
+
+color:var(--gold);
+
+font-size:22px;
+
+}
+
+.facility-card p{
+
+line-height:1.9;
+
+color:#d5dde5;
+
+}

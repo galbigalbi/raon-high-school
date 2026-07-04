@@ -1,0 +1,183 @@
+/* ==========================================================
+FADE UP
+========================================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+transition:
+    opacity .45s ease,
+    transform .45s ease;
+
+}
+
+.reveal.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/* ==========================================================
+SECTION TITLE
+========================================================== */
+
+.section-head{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s;
+
+}
+
+.section-head.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/* ==========================================================
+CARD
+========================================================== */
+
+.campus-card,
+.culture-card,
+.club-card,
+.calendar-item,
+.special-card,
+.dorm-card,
+.facility-card,
+.life-card,
+.exchange-card{
+
+    opacity:0;
+
+    transform:translateY(25px);
+
+transition:
+    opacity .45s ease,
+    transform .45s ease;
+
+}
+
+.campus-card.show,
+.culture-card.show,
+.club-card.show,
+.calendar-item.show,
+.special-card.show,
+.dorm-card.show,
+.facility-card.show,
+.life-card.show,
+.exchange-card.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/* ==========================================================
+CHARACTER
+========================================================== */
+
+.character-visual,
+
+.character-content,
+
+.character-selector{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:.8s;
+
+}
+
+.character-visual.show,
+
+.character-content.show,
+
+.character-selector.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/* ==========================================================
+BUTTON
+========================================================== */
+
+.hero-btn,
+
+.admission-btn{
+
+    transition:
+    transform .35s,
+    box-shadow .35s;
+
+}
+
+.hero-btn:hover,
+
+.admission-btn:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+
+/* ==========================================================
+NAV
+========================================================== */
+
+nav a{
+
+    position:relative;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--gold);
+
+    transition:.3s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}

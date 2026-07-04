@@ -1,0 +1,251 @@
+/* ==========================================================
+ADMISSION
+========================================================== */
+
+.admission{
+
+    position:relative;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    padding:180px 0;
+
+    background:
+        linear-gradient(
+            rgba(5,10,18,.78),
+            rgba(5,10,18,.90)
+        ),
+        url("../assets/bg/night.png")
+        center center / cover
+        no-repeat;
+
+}
+
+.admission::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    radial-gradient(
+        circle at center,
+        rgba(216,179,106,.08),
+        transparent 65%
+    );
+
+}
+
+.admission .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.admission-sub{
+
+    display:block;
+
+    color:var(--gold);
+
+    letter-spacing:5px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    margin-bottom:22px;
+
+}
+
+.admission h2{
+
+    font-size:72px;
+
+    font-weight:800;
+
+    margin-bottom:26px;
+
+}
+
+.admission-line{
+
+    width:90px;
+
+    height:2px;
+
+    background:var(--gold);
+
+    margin:0 auto 36px;
+
+}
+
+.admission p{
+
+    color:#d6dde5;
+
+    font-size:20px;
+
+    line-height:2;
+
+    margin:0;
+
+}
+
+.admission-highlight{
+
+    margin-top:18px !important;
+
+    margin-bottom:48px !important;
+
+}
+
+.admission strong{
+
+    color:var(--gold);
+
+}
+
+.admission-btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:240px;
+
+    height:64px;
+
+    border-radius:999px;
+
+    background:var(--gold);
+
+    color:#111;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.admission-btn:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(216,179,106,.35);
+
+}
+
+
+
+/* ==========================================================
+FOOTER
+========================================================== */
+
+.footer{
+
+    background:#04080d;
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+    padding:70px 0;
+
+}
+
+.footer-logo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:28px;
+
+}
+
+.footer-logo img{
+
+    width:80px;
+
+    opacity:.9;
+
+}
+
+.footer-logo h3{
+
+    font-size:28px;
+
+    letter-spacing:3px;
+
+    color:#ffffff;
+
+}
+
+.footer-text{
+
+    max-width:700px;
+
+    margin:0 auto 40px;
+
+    text-align:center;
+
+    color:#9fb0c2;
+
+    line-height:2;
+
+}
+
+.footer-menu{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:36px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:40px;
+
+}
+
+.footer-menu a{
+
+    color:#d7dfe7;
+
+    transition:.3s;
+
+    font-size:15px;
+
+}
+
+.footer-menu a:hover{
+
+    color:var(--gold);
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    color:#728294;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+}
